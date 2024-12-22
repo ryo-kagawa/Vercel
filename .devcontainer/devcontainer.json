@@ -1,0 +1,21 @@
+{
+	"name": "Vercel",
+	"dockerComposeFile": "compose.yaml",
+	"service": "develop",
+	"workspaceFolder": "/workspace",
+	"features": {
+		"ghcr.io/devcontainers/features/go:1": {},
+		"ghcr.io/devcontainers/features/node:1": {}
+	},
+	"postCreateCommand": ".devcontainer/postCreateCommand.sh",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"go.buildTags": "postgresql",
+				"go.toolsEnvVars": {
+					"GOFLAGS": "-tags=postgresql"
+				}
+			}
+		}
+	}
+}

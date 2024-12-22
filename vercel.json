@@ -1,0 +1,17 @@
+{
+  "build": {
+    "env": {
+      "GO_BUILD_FLAGS": "-ldflags '-s -w' -tags=postgresql -trimpath"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/api/index.go"
+    },
+    {
+      "source": "/karaoke/(.*)",
+      "destination": "/api/karaoke/index.go"
+    }
+  ]
+}

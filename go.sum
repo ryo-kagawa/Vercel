@@ -1,0 +1,12 @@
+filippo.io/edwards25519 v1.1.0 h1:FNf4tywRC1HmFuKW5xopWpigGjJKiJSV0Cqo0cJWDaA=
+filippo.io/edwards25519 v1.1.0/go.mod h1:BxyFTGdWcka3PhytdK4V28tE5sGfRvvvRV7EaN4VDT4=
+github.com/go-sql-driver/mysql v1.8.1 h1:LedoTUt/eveggdHS9qUFC1EFSa8bU2+1pZjSRpvNJ1Y=
+github.com/go-sql-driver/mysql v1.8.1/go.mod h1:wEBSXgmK//2ZFJyE+qWnIsVGmvmEKlqwuVSjsCm7DZg=
+github.com/lib/pq v1.10.9 h1:YXG7RB+JIjhP29X+OtkiDnYaXQwpS4JEWq7dtCCRUEw=
+github.com/lib/pq v1.10.9/go.mod h1:AlVN5x4E4T544tWzH6hKfbfQvm3HdbOxrmggDNAPY9o=
+github.com/line/line-bot-sdk-go/v8 v8.10.0 h1:rdlb+Qp2UGPgAnt0CWTHfPDxmTtQ0taGuiPsqj6LCfU=
+github.com/line/line-bot-sdk-go/v8 v8.10.0/go.mod h1:9U4mY4kLAFSCSwPl1YxtqmG0Db19DnclpuYS5VOkOZY=
+github.com/ryo-kagawa/LINE-Webhook-Karaoke v0.0.0-20241222093118-cf629db94486 h1:b6AUadeP+1VPWN3oBt6gLs5XsjJuYNh04LjbxQ9MzEI=
+github.com/ryo-kagawa/LINE-Webhook-Karaoke v0.0.0-20241222093118-cf629db94486/go.mod h1:gxefHkR+904Qz3zMV1cmg8X3ePWevug7u+aVgvX+IYs=
+github.com/ryo-kagawa/go-utils v1.1.0 h1:QKlCKfixHInKaBPndiEXRf6lfXzW6h36ghmDMtKn2Tk=
+github.com/ryo-kagawa/go-utils v1.1.0/go.mod h1:H2sCkC83sJavplL661y+ej+GFrPiUQa4mDlYkTVdWRo=
