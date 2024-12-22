@@ -1,0 +1,21 @@
+services:
+  develop:
+    image: mcr.microsoft.com/devcontainers/base
+    pull_policy: always
+    volumes:
+      - ../:/workspace:cached
+    tty: true
+
+  postgresql:
+    image: postgres
+    pull_policy: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgresql-data:/var/lib/postgresql/data
+
+volumes:
+  postgresql-data:
