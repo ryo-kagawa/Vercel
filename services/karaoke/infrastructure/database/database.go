@@ -36,21 +36,21 @@ FROM
 		SELECT
 			artistId,
 			name,
-			LEFT(lyrics, 50) AS lyrics,
+			left(lyrics, 50) AS lyrics,
 			damId
 		FROM
 			song
 		WHERE
 			damId IS NOT NULL
 		ORDER BY
-			RAND()
+			random()
 		LIMIT 5
 	) AS song
 	JOIN artist ON(
 		artist.id = song.artistId
 	)
 ORDER BY
-	RAND()
+	random()
 `,
 	)
 	if err != nil {
@@ -89,21 +89,21 @@ FROM
 		SELECT
 			artistId,
 			name,
-			LEFT(lyrics, 50) AS lyrics,
+			left(lyrics, 50) AS lyrics,
 			joysoundId
 		FROM
 			song
 		WHERE
 			joysoundId IS NOT NULL
 		ORDER BY
-			RAND()
+			random()
 		LIMIT 5
 	) AS song
 	JOIN artist ON(
 		artist.id = song.artistId
 	)
 ORDER BY
-	RAND()
+	random()
 `,
 	)
 	if err != nil {
@@ -143,20 +143,20 @@ FROM
 		SELECT
 			artistId,
 			name,
-			LEFT(lyrics, 50) AS lyrics,
+			left(lyrics, 50) AS lyrics,
 			damId,
 			joysoundId
 		FROM
 			song
 		ORDER BY
-			RAND()
+			random()
 		LIMIT 5
 	) AS song
 	JOIN artist ON(
 		artist.id = song.artistId
 	)
 ORDER BY
-	RAND()
+	random()
 `,
 	)
 	if err != nil {
