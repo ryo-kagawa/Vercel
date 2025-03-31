@@ -1,8 +1,9 @@
-package domain
+package infrastructure
 
 import (
 	"database/sql"
 
+	_ "github.com/lib/pq"
 	"github.com/ryo-kagawa/Vercel/environment"
 )
 

@@ -5,9 +5,9 @@ import (
 
 	"github.com/line/line-bot-sdk-go/v8/linebot/messaging_api"
 	linewebhook "github.com/line/line-bot-sdk-go/v8/linebot/webhook"
-	karaokemodel "github.com/ryo-kagawa/LINE-Webhook-Karaoke/domain/model"
-	"github.com/ryo-kagawa/LINE-Webhook-Karaoke/domain/repository"
 	"github.com/ryo-kagawa/Vercel/domain"
+	"github.com/ryo-kagawa/Vercel/services/karaoke/domain/model"
+	"github.com/ryo-kagawa/Vercel/services/karaoke/infrastructure/database"
 )
 
 func (k Karaoke) Webhook(r *http.Request) (domain.HttpResponse, string, error) {
@@ -26,7 +26,7 @@ func (k Karaoke) Webhook(r *http.Request) (domain.HttpResponse, string, error) {
 		return domain.HttpResponse{}, "", err
 	}
 
-	database, err := k.NewDatabase(environment.Database)
+	database, err := database.NewDatabase(environment.Database)
 	if err != nil {
 		return domain.HttpResponse{}, "", err
 	}
@@ -39,7 +39,7 @@ func (k Karaoke) Webhook(r *http.Request) (domain.HttpResponse, string, error) {
 		return domain.HttpResponse{}, "", err
 	}
 	if len(cb.Events) == 0 {
-		return domain.HttpResponse{}, "", nil
+		return domain.HttpResponse{}, "検証", nil
 	}
 	for _, event := range cb.Events {
 		switch event := event.(type) {
@@ -73,13 +73,13 @@ func (k Karaoke) Webhook(r *http.Request) (domain.HttpResponse, string, error) {
 	}, "finish", nil
 }
 
-func randomPickKaraokeSong(text string, karaoke repository.KaraokeSongRepository) ([]karaokemodel.KaraokeSong, error) {
+func randomPickKaraokeSong(text string, database database.Database) ([]model.KaraokeSong, error) {
 	switch text {
 	case "DAM":
-		return karaoke.Dam()
+		return database.Dam()
 	case "JOYSOUND":
-		return karaoke.Joysound()
+		return database.Joysound()
 	default:
-		return karaoke.Ramdom()
+		return database.Ramdom()
 	}
 }

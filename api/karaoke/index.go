@@ -11,10 +11,10 @@ import (
 
 func Handler(w http.ResponseWriter, r *http.Request) {
 	response, log, err := handler(r)
+	if log != "" {
+		fmt.Println(log)
+	}
 	if err != nil {
-		if log != "" {
-			fmt.Println(log)
-		}
 		fmt.Fprintln(os.Stderr, err.Error())
 		if response.Header.HttpStatusCode == 0 {
 			response.Header.HttpStatusCode = http.StatusInternalServerError
@@ -22,7 +22,6 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		response.Write(w)
 		return
 	}
-	fmt.Println(log)
 	if response.Header.HttpStatusCode == 0 {
 		response.Header.HttpStatusCode = 200
 	}
