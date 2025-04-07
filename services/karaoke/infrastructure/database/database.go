@@ -14,7 +14,7 @@ type Database struct {
 }
 
 func NewDatabase(environment environment.EnvironmentDatabase) (Database, error) {
-	db, err := infrastructure.NewDatabase(environment, "karaoke")
+	db, err := infrastructure.NewDatabase(environment.DATABASE_URL, "karaoke")
 	if err != nil {
 		return Database{}, err
 	}

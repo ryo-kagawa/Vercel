@@ -4,11 +4,10 @@ import (
 	"database/sql"
 
 	_ "github.com/lib/pq"
-	"github.com/ryo-kagawa/Vercel/environment"
 )
 
-func NewDatabase(environment environment.EnvironmentDatabase, schema string) (*sql.DB, error) {
-	db, err := sql.Open("postgres", environment.DATABASE_URL)
+func NewDatabase(databaseURL string, schema string) (*sql.DB, error) {
+	db, err := sql.Open("postgres", databaseURL)
 	if err != nil {
 		return nil, err
 	}
