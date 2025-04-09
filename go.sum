@@ -1,6 +1,6 @@
 github.com/lib/pq v1.10.9 h1:YXG7RB+JIjhP29X+OtkiDnYaXQwpS4JEWq7dtCCRUEw=
 github.com/lib/pq v1.10.9/go.mod h1:AlVN5x4E4T544tWzH6hKfbfQvm3HdbOxrmggDNAPY9o=
-github.com/line/line-bot-sdk-go/v8 v8.10.0 h1:rdlb+Qp2UGPgAnt0CWTHfPDxmTtQ0taGuiPsqj6LCfU=
-github.com/line/line-bot-sdk-go/v8 v8.10.0/go.mod h1:9U4mY4kLAFSCSwPl1YxtqmG0Db19DnclpuYS5VOkOZY=
+github.com/line/line-bot-sdk-go/v8 v8.12.1 h1:IE1nwu4fS4wMNw9huQwtB0R4Pnei5D+zQp1VdMNQaAw=
+github.com/line/line-bot-sdk-go/v8 v8.12.1/go.mod h1:9U4mY4kLAFSCSwPl1YxtqmG0Db19DnclpuYS5VOkOZY=
 github.com/ryo-kagawa/go-utils v1.3.0 h1:ks5m/8V2SAZ4HRtrGAPP1GkmDu/ee0+NrfGODkhJrcE=
 github.com/ryo-kagawa/go-utils v1.3.0/go.mod h1:H2sCkC83sJavplL661y+ej+GFrPiUQa4mDlYkTVdWRo=
