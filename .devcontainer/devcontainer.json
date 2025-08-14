@@ -10,14 +10,4 @@
 		"ghcr.io/devcontainers/features/node:1": { }
 	},
 	"postCreateCommand": ".devcontainer/postCreateCommand.sh",
-	"customizations": {
-		"vscode": {
-			"settings": {
-				"go.buildTags": "postgresql",
-				"go.toolsEnvVars": {
-					"GOFLAGS": "-tags=postgresql"
-				}
-			}
-		}
-	}
 }
