@@ -1,6 +1,6 @@
-github.com/lib/pq v1.10.9 h1:YXG7RB+JIjhP29X+OtkiDnYaXQwpS4JEWq7dtCCRUEw=
-github.com/lib/pq v1.10.9/go.mod h1:AlVN5x4E4T544tWzH6hKfbfQvm3HdbOxrmggDNAPY9o=
-github.com/line/line-bot-sdk-go/v8 v8.18.0 h1:YbkGTFixMwTFtWhWwdu6lExbkuQGUCFHukLtC7YeMO4=
-github.com/line/line-bot-sdk-go/v8 v8.18.0/go.mod h1:AeSRUuu7WGgveGDJb6DyKyFUOst2UB2aF6LO2cQeuXs=
-github.com/ryo-kagawa/go-utils v1.4.0 h1:sJLxFfQCJUWi6S46GUsVumpZbgqCAMAZOq139mLQyoA=
-github.com/ryo-kagawa/go-utils v1.4.0/go.mod h1:hqhttnHappSAzDtiTYt40usUHRm+9iSa7pF8VApy0BQ=
+github.com/lib/pq v1.11.2 h1:x6gxUeu39V0BHZiugWe8LXZYZ+Utk7hSJGThs8sdzfs=
+github.com/lib/pq v1.11.2/go.mod h1:/p+8NSbOcwzAEI7wiMXFlgydTwcgTr3OSKMsD2BitpA=
+github.com/line/line-bot-sdk-go/v8 v8.19.0 h1:5FD/1SprRZ8Y0FiUI6syYiBewOs0ak2tuUBMYN0wzE4=
+github.com/line/line-bot-sdk-go/v8 v8.19.0/go.mod h1:AeSRUuu7WGgveGDJb6DyKyFUOst2UB2aF6LO2cQeuXs=
+github.com/ryo-kagawa/go-utils v1.5.1 h1:6YkDcCF6ocXF4Nvl1n5q6iwnzo5+CXl0bOs9CawQ7BY=
+github.com/ryo-kagawa/go-utils v1.5.1/go.mod h1:hqhttnHappSAzDtiTYt40usUHRm+9iSa7pF8VApy0BQ=
