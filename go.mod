@@ -1,6 +1,6 @@
 module github.com/ryo-kagawa/Vercel
 
-go 1.26
+go 1.27.4
 
 require (
 	github.com/lib/pq v1.12.3
